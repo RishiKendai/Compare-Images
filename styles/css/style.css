@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Raleway&display=swap");
+:root {
+  --font-fira-sans: "Fira Sans", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e8f5f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0.7em 4px 0.7em;
+}
+
+header {
+  margin-bottom: 0.8em;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  letter-spacing: 1.2px;
+  font-family: var(--font-fira-sans);
+  color: #3870a8;
+  text-transform: capitalize;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  width: 100%;
+}
+
+main .input_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7px;
+  gap: 8px;
+}
+
+main .input_details .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .input_details .input p {
+  text-align: center;
+  font: 600 1rem var(--font-raleway);
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: #3870a8;
+}
+
+main .input_details .input .btn {
+  background-color: #3870a8;
+  color: white;
+  padding: 7px 12px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font: 400 0.9rem var(--font-raleway);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+main .input_details .input .btn:hover, main .input_details .input .btn:active {
+  background-color: #3e7dbb;
+}
+
+main .input_details .input input {
+  display: none;
+}
+
+main .input_details .input span {
+  text-align: center;
+  font: 400 1rem sans-serif;
+  color: #353535;
+}
+
+main section {
+  margin: auto;
+  width: clamp(280px, 80%, 560px);
+  min-height: 580px;
+  border: 1px solid #000000a8;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+main section #range_slider {
+  position: absolute;
+  z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  margin-left: 5px;
+  height: 100%;
+  width: calc(100% + 40px);
+  top: 0;
+  background: transparent;
+}
+
+main section #range_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-clip-path: polygon(0 50%, 25% 25%, 25% 40%, 75% 40%, 75% 25%, 100% 50%, 75% 75%, 75% 60%, 25% 60%, 25% 75%);
+          clip-path: polygon(0 50%, 25% 25%, 25% 40%, 75% 40%, 75% 25%, 100% 50%, 75% 75%, 75% 60%, 25% 60%, 25% 75%);
+  height: 40px;
+  width: 40px;
+  margin-left: -25px;
+  cursor: col-resize;
+  background: -webkit-gradient(linear, left top, right top, from(#333399), color-stop(#553399), to(#883399));
+  background: linear-gradient(to right, #333399, #553399, #883399);
+}
+
+main section img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+
+main section .comparision_image {
+  -webkit-clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+          clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+footer {
+  margin-top: auto;
+  font: 600 0.8rem var(--font-raleway);
+  letter-spacing: 1.6px;
+}
+
+footer span {
+  color: #000000ac;
+}
+
+footer a {
+  color: #3870a8;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    min-height: 100vh;
+    padding: 1em 2em 0.5em 2em;
+  }
+  main {
+    margin-bottom: 0.8em;
+  }
+  main section {
+    min-height: 460px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparision Slider</title>
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- ! HEADER -->
+    <header>
+      <h1>image comparision</h1>
+    </header>
+    <!-- ! MAIN -->
+    <main>
+      <div class="input_details">
+        <!-- Original Image -->
+        <div class="input">
+          <p>comparing image</p>
+          <input type="file" id="comparision_image_input" accept="image/*" />
+          <label class="btn" for="comparision_image_input">select</label>
+          <span id="img-2_name">Null</span>
+        </div>
+        <!-- Comapring Image -->
+        <div class="input">
+          <p>original image</p>
+          <input type="file" id="original_image_input" accept="image/*" />
+          <label class="btn" for="original_image_input">select</label>
+          <span id="img-1_name">Null</span>
+        </div>
+      </div>
+
+      <section>
+        <input type="range" id="range_slider" min="0" max="100" />
+        <img src="" class="original_image" alt="original_image" />
+        <img src="" class="comparision_image" alt="comparision_image" />
+      </section>
+    </main>
+    <!-- ! FOOTER -->
+    <footer>
+      <span>Created by</span>
+      <a target="_blank" href="https://github.com/RishiKendai/Compare-Images"
+        >RishiKendai</a
+      >
+      ❤️
+    </footer>
+  </body>
+</html>
